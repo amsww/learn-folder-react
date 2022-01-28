@@ -1,0 +1,206 @@
+.header{
+    background-color: #2874f0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 56px;
+}
+
+.testing {
+  visibility:hidden;
+  position: absolute;
+  margin-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transform: translate(-50%,-50%);
+  background-color: #fafafa;
+  opacity: 1;
+  z-index: 4;
+}
+
+.testingTwo{
+  visibility: hidden;
+  position: absolute;
+  background-color: #fafafa;
+  opacity: 1;
+  z-index: 4;;
+}
+
+.whythis:hover .testing {
+  visibility: visible;
+  opacity: 1;
+
+}
+.whythis{
+  padding: 28px 0px;
+  max-width: 125px;
+}
+
+.testing::before{
+  position:absolute;
+  content:"";
+  height: 20px;
+  width: 20px;
+  background:white;
+  right:-75px;
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+
+.testingTwo::after{
+  position:absolute;
+  content:"";
+  height: 17px;
+  width: 17px;
+  background:white;
+  right:113px;
+  top: -5px;
+  transform: rotate(45deg);
+}
+
+.header_four:hover .testingTwo{
+visibility: visible;
+}
+
+
+.header_one{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 117px;
+    width: 80px;
+}
+
+.header_one>img{
+    width: 75px;
+    height: 20.1px;
+    object-fit: contain;
+}
+
+.header_two{
+    display: flex;
+    flex:3;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    padding-left: 0;
+    margin-left: -60px;
+    min-width: 304px;
+}
+
+.groupedDiv{
+  flex: 6;
+  display: flex;
+}
+
+@media all and (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 149px;
+  }
+
+  .header_one{
+    margin: 10px 0px 10px 35px;
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+  .header_two{
+    min-width: 300px;
+    margin: auto;
+  }
+  .groupedDiv{
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .groupedDiv .whythis {
+    margin: 0px 65px;
+  }
+
+  .groupedDiv .header_five{
+    margin-left: 30px;
+  }
+
+  .card{
+    margin: auto;
+  }
+  
+}
+
+.header_two>input{
+    border: none;
+    outline: none;
+    width: 263px;
+    padding: 0px 0px 0px 15px;
+    height: 36px;
+    font-size: 14px;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.button_input{
+  padding: 4px 12px 0 8px;
+}
+
+.header_two>.button_input>svg{
+    fill: blue;
+    width: 30px;
+    padding: 0px 13px 0px 0px;
+    cursor: pointer;
+}
+
+.header_three{
+    flex:1;
+    margin: 0px 20px;
+}
+
+.header_three>button{
+    border: none;
+    outline: none;
+    color: #2874f0;
+    width: 12vw;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+}
+
+.header_four{
+    display: flex;
+    flex:1;
+    align-items: center;
+    margin-left: 24px;
+    padding: 17px 0px 16px 0px;
+}
+
+
+
+.header_five{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 80px;
+}
+
+.header_five>p{
+    color: white;
+    font-weight: bold;
+    cursor: pointe
+}
+
+.header_five>svg{
+    fill: white;
+    cursor: pointer;
+}
+
+.loginButton{
+  margin-bottom: 15px;
+  top: 15px;
+}

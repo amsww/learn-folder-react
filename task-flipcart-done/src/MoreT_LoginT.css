@@ -1,0 +1,36 @@
+.moret_one:hover,.login_elements:hover{
+cursor: pointer;
+background-color: rgb(245, 243, 243);
+}
+
+.loginT_one{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+
+.moret>hr,.loginT_one>hr{
+margin: 0px 1px;
+border: none;
+height: 0.5px;
+background-color: rgb(233, 233, 233);
+width: 15vh;
+}
+
+.login_top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.moret_one{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.hTAg_one{
+    margin-left: 20px;
+    color: #2874f0;
+}
+

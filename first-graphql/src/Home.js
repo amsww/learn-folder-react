@@ -30,7 +30,10 @@ if (error) return <h2>Error</h2>
 
 if (data){
 
-  if (data.urlResolver==null)  return <NotFound/>
+  if (data.urlResolver==null)  {
+    navigate('/notfound')
+    return <NotFound/>
+  }
 
   if (data.urlResolver.type == "PRODUCT"){
     navigate(`/product/${slicedId}`)
@@ -45,6 +48,7 @@ if (data){
 
 
 }
+navigate('/notfound')
 return <NotFound/>
  
 };

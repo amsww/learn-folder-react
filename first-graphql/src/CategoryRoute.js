@@ -1,6 +1,6 @@
 import CategoryPage from './CategoryPage';
 import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams,useNavigate } from 'react-router-dom';
 import { useQuery,gql } from '@apollo/client';
 import { useEffect } from 'react/cjs/react.development';
 import { NotFound } from './NotFound';
@@ -9,7 +9,7 @@ const CategoryRoute = () => {
 
 
     const {id} = useParams();
-    const [requiredData,setRequiredData]=useState();
+    const navigate=useNavigate();
 
     const GET_PRODUCTS = gql`
   {
@@ -33,6 +33,7 @@ if (error){
 if (loading) return <h1>Loading</h1>
 
 if (data.categories.items.length === 0){
+  navigate('/notfound')
   return <NotFound/>
 }
 

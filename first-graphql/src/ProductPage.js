@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useQuery,gql } from '@apollo/client';
 import { NotFound } from './NotFound';
 
@@ -7,6 +7,7 @@ import { NotFound } from './NotFound';
 const ProductPage = () => {
  
     const {id} = useParams();
+    const navigate=useNavigate();
     
 
     const GET_DETAILS = gql`
@@ -29,7 +30,11 @@ const {error,data,loading} = useQuery(GET_DETAILS);
 if (loading) return <h2>Loading</h2>
 if (error) return <h>Try again</h>
 
-if (data.products.items==0) return<NotFound/>
+if (data.products.items==0) {
+  navigate('/notfound')
+  return <NotFound/>
+}
+
 
 if (data){
   return <div>

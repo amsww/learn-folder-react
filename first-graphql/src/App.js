@@ -22,7 +22,7 @@ function App() {
             <Route path='/:id' element={<Home/>}></Route>
             <Route path='/product/:id' element={<ProductPage/>}></Route>
             <Route path='/category/:id' element={<CategoryRoute/>}></Route>
-            <Route element={<NotFound/>}/>
+            <Route path="/notfound" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </div>

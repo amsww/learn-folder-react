@@ -1,0 +1,28 @@
+.inputOne,.inputTwo{
+    margin-left: 20px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+}
+
+.calculateButton{
+    margin-top: 30px;
+    margin-left: 170px;
+}
+
+.inputMainDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputOneDiv{
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

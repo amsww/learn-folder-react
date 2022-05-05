@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.inputOne,.inputTwo{
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 50px;
+  line-height: 1.5;
+}
+.inputTwo{
+  margin-left: 30px;
+}
+
+.mainDiv{
+  display: flex;
+}
+
+
+.App{
+  flex: 1;
+  max-width: 285px;
+  margin-left: 90px;
+  margin-top: 50px;
+  margin: 30px;
+}
+
+.mainApp{
+  display: flex;
+  width: 97vw;
+  padding: 0 10px;
+}
+
+
+
+.calculateButton{
+  margin-top: 30px;
+  margin-left: 170px;
+}
+
+.inputMainDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.inputOneSub,.inputTwoDiv{
+  display: flex;
+  flex: 1;
+  border-style: solid;
+  border-color: #d2d6dc;
+}
+
+.inputOneDiv{
+display: flex; 
+margin-bottom: 28px;  
+}
+
+.inputOneSub > input, .inputTwoDiv > input {
+  margin-left: 20px;
+}
+
+.inputOneSub > span, .inputTwoDiv > span {
+  margin-top: 17px;
+  margin-right: 10px;
+}
+.inputOneSub{
+  margin-right: 20px;
+}
+
+.inputOne::placeholder, .inputTwo::placeholder {
+  font-size: 18px;
+  font-weight: 100;
+  color: #d2d6dc;
+}
+
+.areaDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.areaDiv > * {
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 5px;
+  flex: 1;
+}
+
+.squareFeetDiv{
+  margin-left: -50px;
+}
+
+.areaNUmber{
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 1rem;
+  margin:0px;
+  margin-bottom: 5px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+.addButton {
+  border-style: none;
+  box-shadow: none;
+  outline: 2px solid transparent;
+  background-color: transparent;
+  font-size: 16px;
+  padding-left: 0px;
+  text-decoration: underline;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.oneButton{
+  margin-bottom: 14px;
+}
+
+.addButton:hover{
+  cursor: pointer;
+  color: darkcyan;
+}
+
+.calculateButton{
+  padding: 14px 54px 13px;
+  border-style: solid;
+  width: 285px;
+  height: 50px;
+  border-width: 1px;
+  margin: 20px 0px 0px 0px;
+  background-color: black;
+  color:white;
+}
+
+.calculateButton:hover{
+  cursor: pointer;
+  background-color: #00c0be;
+}
+
+.calculateButton:disabled {
+  background-color: #bfbfbf;
+  color: white;
+  font-size: 16px;
+}
+
+.spanNew {
+  margin-top: 4px;
+  margin-left:100px;
+}
+
+.areaDiv > button {
+  margin-top: 0px;
+}
+
+.headingText{
+  font-size: 25px;
+  letter-spacing: .01em;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  font-family: unset;
+
+}
+
+.logoImage{
+  width:600px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+@media all and (max-width: 900px) {
+  .mainDiv {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .App{
+     max-width: 360px; 
+     flex: 1;
+     margin: 30px;
+  } 
+
+  .imageDiv {
+      max-width: 320px;
+  }
+}
+
+.QuantityDiv {
+  display: none;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+  
+.imageClass {
+  width: 100%;
+  height: 400px;
+  margin-top: 53px;
+  margin-left: 15px;
+}
+
+
+.textMore{
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.textmoreHeading{
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+

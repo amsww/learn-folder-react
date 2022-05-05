@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import { RowOne } from './RowOne';
+import {Provider} from 'react-redux';
+import store from './store';
+import Counter from './Counter'
+import { useState } from 'react';
 
 function App() {
-  const AddRow=()=>{
-    return <h1>hiii</h1>
-  }
+
 
   return (
     <div className="App">
-      <RowOne />
-      <button onClick={()=>AddRow()}>Add</button>
+      <Provider store={store}>
+        <Counter />
+      </Provider>
+     
     </div>
   );
 }

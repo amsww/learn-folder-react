@@ -1,0 +1,6 @@
+.home:hover > .category{
+  display: block;
+  z-index: 1;
+}
+
+

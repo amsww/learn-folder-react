@@ -48,7 +48,9 @@ function Header ({setInputValue})  {
               <p class="text-white mb-1">More</p>
               <KeyboardArrowDownIcon className='testingTwoDrop' style={{fill:"white"}}/>
               </div>
-              <div className='testingTwo absolute w-56' style={{marginTop:"43px",boxShadow:"0px 8px 16px 0px rgba(0,0,0,0.2)"}}><MoreT /></div>
+              <div className='testingTwo absolute w-56' style={{marginTop:"43px",boxShadow:"0px 8px 16px 0px rgba(0,0,0,0.2)"}}>
+                  <MoreT />
+            </div>
             </div>
 
 
